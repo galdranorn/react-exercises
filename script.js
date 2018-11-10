@@ -1,4 +1,4 @@
-/*const movies = [
+const movies = [
     {
         id: 1, // for optimalisation
         title: 'Harry Potter',
@@ -9,25 +9,25 @@
         id: 2, // for optimalisation
         title: 'Król Lew',
         desc: 'film o królu sawanny',
-        poster: 'potter.jpg'
+        poster: 'lion.jpg'
     },
     {
         id: 3, // for optimalisation
         title: 'John Wick',
         desc: 'zabili mu pieska, więc zabił 77 osób',
-        poster: 'potter.jpg'
+        poster: 'wick.jpg'
     },
     {
         id: 4, // for optimalisation
         title: 'Gwiezdne Wojny',
         desc: 'ja sem twój tatinek',
-        poster: 'potter.jpg'
+        poster: 'star.jpg'
     },
     {
         id: 5, // for optimalisation
         title: 'Władca Pierścieni',
         desc: 'czemu nie wysłali orłów?!',
-        poster: 'potter.jpg'
+        poster: 'ring.jpg'
     },
     {
         id: 6, // for optimalisation
@@ -35,7 +35,7 @@
         desc: 'jak tatuś zrobi dzióbek... ;-)',
         poster: 'swir.jpg'
     }
-  ];*/
+  ];
 
 
 // --- CLASS MOVIE 
@@ -54,16 +54,11 @@ let Movie = React.createClass ({
 
 }});
 
-// data object
-const movie = {
-    id: 1,
-    title: 'Harry Potter',
-    desc: 'film o czarodzieju',
-    poster: 'potter.jpg'
-}
+// creating movie DOM elements from movies list objects list
+const moviesList = movies.map(item => React.createElement(Movie, {key: item.id, movie: item}))
 
 // creating element from class and data
-const element = React.createElement(Movie, {key: movie.id, movie: movie});
+const element = React.createElement('ul', {}, moviesList)
 
 // render to DOM
 ReactDOM.render(element, document.getElementById('app'));
