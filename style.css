@@ -44,6 +44,7 @@ body {
 
 #app .contactItem {
   padding: 5px;
+  font-size: 14px;
 }
 
 #app .contactItem .contactData p, #app .contactItem .contactData a {
