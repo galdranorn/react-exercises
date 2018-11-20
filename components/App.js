@@ -29,8 +29,8 @@ var contacts = [
     render: function() {
       return (
         <div className='app'>
-          <ContactForm contact={'contactForm'}/>
-          <Contacts items={'contacts'}/>
+          <ContactForm contact={contactForm}/>
+          <Contacts items={contacts}/>
         </div>
       );
     }
