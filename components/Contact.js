@@ -10,9 +10,9 @@ var Contact = React.createClass({
                 <img className={'contactImage'} src={'http://icons.veryicon.com/png/System/gCons/contacts.png'}/>
             </div>
             <div className={'contactItem col-lg-6 col-md-6 col-sm-12'}>
-                <p className={'contactLabel'}>Imię: ${this.props.item.firstName}</p>
-                <p className={'contactLabel'}>Nazwisko: ${this.props.item.lastName}</p>
-                <a className={'contactEmail'} href={'mailto:'+this.props.item.email}>${this.props.item.email}</a>
+                <p className={'contactLabel'}>Imię: {this.props.item.firstName}</p>
+                <p className={'contactLabel'}>Nazwisko: {this.props.item.lastName}</p>
+                <a className={'contactEmail'} href={'mailto:'+this.props.item.email}>{this.props.item.email}</a>
             </div>
         </div>
         )
