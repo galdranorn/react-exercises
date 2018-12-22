@@ -25,6 +25,7 @@ var contacts = [
     email: ''
   };
   
+// 'contactForm' and 'contacts' were not sending data
   var App = React.createClass({
     render: function() {
       return (
